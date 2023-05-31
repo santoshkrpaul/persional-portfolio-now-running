@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>My Portfolio</title>
+  	 <link rel="stylesheet" href="mystyles.css">
+
+	
+
+
+
+
+
+
+	<title>Page Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+        header {
+		display: flex;
+		align-items: center;
+		padding: 6px 20px;
+		background-color: rgb(196, 218, 245);
+		color: white;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	
+	.logo {
+		height: 30px;
+		margin-right: 20px;
+	}
+	
+	.dropdown {
+		display: flex;
+        margin-bottom: 0%;
+		align-items: center;
+		margin-right: auto;
+	}
+	
+	.dropdown select {
+		border-radius: 0px;
+		padding: 3px 10px;
+		margin-right: 10px;
+		background-color: white;
+		border: none;
+		cursor: pointer;
+		font-size: 12px;
+		min-width: 100px;
+	}
+	
+	.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s ease;
+  border-radius: 20px;
+  margin-right: 10px; /* Add this line */
+
+}.btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  height: 24px;
+  font-size: 8px;
+  transition: background-color 0.2s ease;
+  border-radius: 100px;
+  width: 6;
+  margin-right: 40px;}
+	.btn:hover {
+		background-color: rgba(225, 18, 18, 0.2);
+	}
+    .btn2:hover {
+		background-color: rgba(224, 14, 14, 0.2);
+	}
+	
+	.btn img {
+		height: 9px;
+		vertical-align: middle;
+	}
+    
+    .line{
+        margin-top: 0%;
+        margin-bottom: 0%;
+
+    }
+    .btn2 img {
+		height: 12px;
+		vertical-align: middle;}
+</style>
+</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to my portfolio! - Santosh</h2>
+    <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I have 6 months of experience in front-end web development and have worked on a variety of projects. I am skilled in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1 - Face Recognition using Python and OpenCV</h3>
+      <p>Description of project 1.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2 - Personal Portfolio using HTML, CSS, and JavaScript</h3>
+      <p>Description of project 2.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+
+
+
+
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url('C:\Users\Santosh\OneDrive\Desktop\WhatsApp Image 2021-01-17 at 2.02.21 PM (1) (Copy).jpeg');
+  background-size: cover;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Make the website responsive */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+<body>
+    <hr class="line" size="3" width="100%" color="red">
+    <header>
+        
+        <img class="logo" src="Spectrum Anomalies_COMP.svg">
+        <div class="dropdown">
+            <select>
+                <option value="">Select Option</option>
+                <option value="GFG">GFG</option>
+                <option value="OS">OS</option>
+                <option value="DBMS">DBMS</option>
+                <option value="Data Structure">Data Structure</option>
+            </select>
+            <select>
+                <option value="5G">5G</option>
+                <option value="4G">4G</option>
+                <option value="3G">3G</option>
+                <option value="2G">2G</option>
+            </select>
+            <select>
+                <option value="25000">25000</option>
+                <option value="20000">20000</option>
+                <option value="15000">15000</option>
+                <option value="10000">10000</option>
+            </select>
+        </div>
+        <button class="btn"><img src="bell.svg"></button>
+        <button class="btn"><img src="pie-chart.svg"></button>
+        <button class="btn2"><img src="person.svg"></button>
+        <button class="btn"><img src="save.svg"></button>
+        <button class="btn"><img src="search.svg"></button>
+    </header>
+
+	 <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to my portfolio!@SAantosh</h2>
+    <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+	<p><b>Email</b>:-<mark><u><i>santoshcoll33@gmail.com</i></u></mark><br></p>
+	<p><b>mob</b> :-<u>8877996733</u></p>
+	<p><b>Address</b>:-<u><i><strong>AT : + P-s: + BLock :-Azam-nagar</strong>  <b>(855113) kir (Bihar)</b></i></u><br></p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I have 6 monthe of experience in front-end web development and have worked on a variety of projects. I am skilled in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <h3>Description of project 1. made a face recognition using python and mdule Open CV </h3>
+    </div>
+    <div class="project">
+      <h3>Project 2 persional portfolio using HTML , CSS , Jva-Script </h3>
+      <p>Description of project 2.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>    
